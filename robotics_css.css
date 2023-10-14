@@ -1,0 +1,542 @@
+body {
+	margin: 0;
+	background-color: #bae1ff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+.bottom {
+	height: 8rem;
+}
+
+/*------------------ Nav Bar ------------------*/
+
+.nav {
+	background-color: #004b87;
+	position: sticky;
+	top: 0;
+	border: #023e61 5px ridge;
+	height: 10%;
+	z-index: 1;
+  overflow: hidden;
+}
+
+.nav-contents a {
+  float: left;
+  color: white;
+  text-align: center;
+  margin: 10px 15px;
+  padding-top: 10px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: all ease-in-out 200ms;
+  position: relative;
+}
+
+.nav .nav-icon, #small-nav .nav-icon {
+  display: inline-block;
+	background-color: transparent;
+	color: white;
+	transition: all ease-in-out 200ms;
+}
+
+.nav .nav-icon {
+	display: none;
+	font-size: 1.3rem;
+}
+
+#small-nav .nav-icon {
+	padding: 20px;
+	font-size: 1.5rem
+}
+
+.nav a:hover, .nav .nav-icon:hover, #small-nav .nav-icon:hover, #small-nav a:hover {
+  color: #99e2ff;
+}
+
+.nav-contents a::before {
+	content: '';
+	display: block;
+	height: 5px;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	width: 0;
+	transition: all ease-in-out 250ms;
+}
+
+.nav-contents a:hover::before {
+	width: 100%;
+}
+
+.logo-pic {
+	aspect-ratio: 4/1;
+	width: 280px;
+}
+
+#logo-link {
+	display: block;
+	width: fit-content;
+	float: left;
+	margin: 15px 5%;
+}
+
+.nav-contents {
+	margin: 0;
+	padding: 0;
+	width: fit-content;
+	font-family: "Archer Office";
+	position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  right: 3%;
+}
+
+#small-nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 0;
+	display: none;
+	border-left: #023e61 5px ridge;
+	height: 100%;
+	overflow: auto;
+	list-style: none;
+	background-color: #004b87;
+	box-shadow: 0 0 10px rgba(0, 0, 0);
+	transition: all ease-in-out 200ms;
+	z-index: 2;
+}
+
+#small-nav a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	width: fit-content;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border: white;
+	border-width: 0, 2px;
+	font-size: 1.1rem;
+	font-family: "Archer Office";
+	font-weight: bold;
+	transition: all ease-in-out 200ms;
+}
+
+.navbar-animate {
+	position: relative;
+	animation: slide-left 0.4s;
+}
+
+@keyframes slide-left {
+	from {
+		right: -300px;
+		opacity:0
+	} 
+	to {
+		right: 0;
+		opacity:1
+	}
+}
+
+@media screen and (max-width: 1070px) {
+  .nav a {
+  	display: none;
+  }
+
+  .nav .nav-icon {
+    float: right;
+    display: inline-block;
+    width: fit-content;
+  }
+
+  .logo-pic {
+		width: 185px;
+	}
+}
+
+/*------------------ Headers ------------------*/
+
+h1, h2, h3, h4, h5, h6, a {
+	text-align: center;
+	width: fit-content;
+	margin: auto;
+}
+
+h1, h2, h3, h6 {
+	font-family: "Proxima Nova";
+}
+
+h4, h5 {
+	font-family: "Archer Office";
+}
+
+h1 {
+	font-size: 3.5rem;
+}
+
+h2 {
+	color: #61b5e5;
+	font-size: 3rem;
+}
+
+h3 {
+	color: #155c95;
+	font-size: 3rem;
+	margin-top: 5%;
+}
+
+h4 {
+	color: #0e2833;
+	font-size: 1.5rem;
+	margin-bottom: 5%;
+}
+
+h5 {
+	color: #52b9e7;
+	font-size: 2rem;
+	margin-top: 5%;
+	margin-bottom: 2%;
+}
+
+h6 {
+	color: #d4f0ff;
+	font-size: 1rem;
+	margin: 3%;
+}
+
+.text-fade1 {
+	text-transform: uppercase;
+	color: #0177c7;
+	animation-name: fade;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+}
+
+.text-fade2 {
+	color: #46adf3;
+	animation-name: fade;
+	animation-duration: 3.5s;
+	animation-iteration-count: 1;
+}
+
+.text-fade3 {
+	animation-name: fade;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+}
+
+#team {
+	color: whitesmoke;
+	text-shadow: black 1px 0 15px;
+}
+
+/*------------------ Txt/Lst ------------------*/
+
+p {
+	font-family: "Archer Office";
+	text-align: center;
+	font-size: 1.4rem;
+	color: #55595a;
+	width: 75%;
+	margin: auto;
+	font-weight: 600;
+}
+
+.margin {
+	margin: 18% 0;
+}
+
+.picture-div {
+	background: url("robotics-team.jpeg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	padding-top: 20%;
+	padding-bottom: 20%;
+	width: 100%;
+	height: auto;
+}
+
+.mvp-link {
+	font-size: 2rem;
+}
+
+#homepage-div-top {
+	height: fit-content;
+	border-top-color: #004b87;
+	border-top-width: 2px;
+	border-top-style: solid;
+}
+
+#homepage-div-bottom {
+	border-bottom-color: #004b87;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+}
+
+
+/*------------------- Image -------------------*/
+
+#members {
+	display: block;
+	margin: auto;
+	margin-bottom: 5%;
+	text-align: center;
+	color: gray;
+	border: #38a2b5 5px double;
+}
+
+.gallery {
+	line-height: 0;
+	column-count: 5;
+	column-gap: 5px;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+.gallery img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 5px;
+}
+
+/*------------------ Embeds ------------------*/
+
+.embed {
+	margin-top: 35px;
+	margin-bottom: 8px;
+}
+
+.embed-descrip, .embed-link:link {
+  font-size: 1.6rem;
+	width: fit-content;
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+
+.embed-descrip {
+	margin-top: 3%;
+	margin-bottom: 8%;
+}
+
+#img_gal {
+	opacity: 1;
+	transition: all ease 200ms;
+}
+
+#img_gal:hover {
+	opacity: 0.8;
+}
+
+.embed-link:link {
+	color: #3a8287;
+	text-decoration: none;
+}
+
+.embed-link:visited {
+	color: #3a8287;
+}
+
+.embed-descrip:hover {
+	color: #45d6c3;
+	transition: all ease-in-out 200ms;
+}
+
+.embed-bottom {
+	margin-bottom: 6rem;
+}
+
+.more-container iframe, .more-container img {
+	aspect-ratio: 16/9;
+	width: 65%;
+}
+
+/*------------------ Footer ------------------*/
+
+footer {
+	background: #004b87;
+	border: #023e61 5px ridge;
+	height: auto;
+}
+
+.footer-p {
+	font-size: 0.9rem;
+	color: whitesmoke;
+	margin-bottom: 2%;
+	width: fit-content;
+}
+
+.foot-links {
+	font-style: italic;
+	font-weight: 550;
+	width: fit-content;
+}
+
+#poly-link {
+	display: block;
+}
+
+.foot-links .footer-head {
+	font-style: initial;
+}
+
+.foot-links:link, .foot-links:visited {
+	color: #99e2ff;
+	text-decoration: none;
+}
+
+.foot-links:hover {
+	color: #76ccfe;
+	transition: all ease-in-out 200ms;
+}
+
+/*------------- Footer (Poly Website Link) --------------*/
+
+.footer-head {
+	text-align: center;
+	color: #d4f0ff;
+	font-size: 1.2rem;
+	background: none;
+	border: 0 #d4f0ff;
+	box-sizing: border-box;
+	margin: auto;
+	margin-top: 2%;
+	margin-bottom: 20px;
+	padding: 10px 20px;
+	box-shadow: inset 0 0 0 2px #d4f0ff;
+	position: relative;
+	transition: color 0.25s;
+	width: fit-content;
+}
+
+.footer-head::before, .footer-head::after {
+  color: #d4f0ff;
+  box-sizing: inherit;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+
+.footer-head::before {
+  top: 0;
+  left: 0;
+}
+
+.footer-head::after {
+  bottom: 0;
+  right: 0;
+}
+
+.footer-head:hover {
+  color: #6dc0ed;
+}
+
+.footer-head:hover::before, .footer-head:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-head:hover::before {
+  border-top-color: #6dc0ed;
+  border-right-color: #6dc0ed;
+  color: #6dc0ed;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+
+.footer-head:hover::after {
+  border-bottom-color: #6dc0ed;
+  border-left-color: #6dc0ed;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+
+.img-div {
+	display: inline-flex;
+	justify-content: center;
+}
+
+.foot-img {
+	margin: auto;
+	text-align: center;
+	display: inline-block;
+}
+
+/*----------------- Animation -----------------*/
+@keyframes fade {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.fade1 {
+	animation-name: fade;
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+}
+
+.fade2 {
+	animation-name: fade;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+}
+
+.fade3 {
+	animation-name: fade;
+	animation-duration: 3.5s;
+	animation-iteration-count: 1;
+}
+
+.fade4 {
+	animation-name: fade;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+}
+
+/*----------------- Extension Page -----------------*/
+
+.doc-page h1 {
+	padding: 15px;
+	width: 100%;
+	color: #003a78;
+	border-bottom: #004b87 solid 4px;
+}
+
+#homepage-link, .doc-link, .doc-p, .mvp-link {
+	color: #548fe3;
+	font-family: "Archer Office";
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+.doc-link, .doc-p, .mvp-link {
+	width: fit-content;
+	margin: auto;
+	display: block;
+}
+
+#homepage-link, .doc-link, .doc-p {
+	font-size: 1.4rem;
+}
+
+#homepage-link:hover, .doc-link:hover, .mvp-link:hover {
+	color: #5b72f5;
+	transition: all ease-in-out 200ms;
+}
+
+.doc-page li {
+	list-style: none;
+	padding: 5px;
+	width: 100%;
+}
