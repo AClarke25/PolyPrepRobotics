@@ -12,24 +12,24 @@ body {
 
 @font-face {
 	font-family: "Archer Office";
-	src: url(ArcherOffice-Regular.ttf) format("truetype");
+	src: url(ArcherOffice-Regular.ttf);
 }
 
 @font-face {
 	font-family: "Archer Office";
-	src: url(ArcherOffice-Bold.ttf) format("truetype");
+	src: url(ArcherOffice-Bold.ttf);
 	font-weight: bold;
 }
 
 @font-face {
 	font-family: "Archer Office";
-	src: url(ArcherOffice-Italic.ttf) format("truetype");
+	src: url(ArcherOffice-Italic.ttf);
 	font-style: italic;
 }
 
 @font-face {
 	font-family: "Archer Office";
-	src: url(ArcherOffice-BoldItalic.ttf) format("truetype");
+	src: url(ArcherOffice-BoldItalic.ttf);
 	font-weight: bold;
 	font-style: italic;
 }
