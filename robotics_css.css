@@ -13,7 +13,6 @@ body {
 @font-face {
 	font-family: "Archer Office";
 	src: url(ArcherOffice-Regular.ttf);
-	font-style: normal;
 }
 
 @font-face {
@@ -37,8 +36,7 @@ body {
 
 @font-face {
 	font-family: "Proxima Nova";
-	src: url(PromixaNova-Black.otf);
-	font-style: normal;
+	src: url(PromixaNova-Black.otf), format("opentype");
 }
 
 .bottom {
