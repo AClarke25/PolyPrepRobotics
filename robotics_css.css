@@ -37,6 +37,7 @@ body {
 @font-face {
 	font-family: "Proxima Nova";
 	src: url(ProximaNova-Black.otf);
+	font-weight: bold;
 }
 
 .bottom {
