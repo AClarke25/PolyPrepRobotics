@@ -36,7 +36,7 @@ body {
 
 @font-face {
 	font-family: "Proxima Nova";
-	src: url(ProximaNova-Black.otf);
+	src: url(ProximaNova-Black.otf) format("opentype");
 }
 
 .bottom {
@@ -204,7 +204,7 @@ h1, h2, h3, h6 {
 }
 
 h4, h5 {
-	font-family: "Proxima Nova";
+	font-family: "Archer Office";
 }
 
 h1 {
