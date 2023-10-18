@@ -208,12 +208,12 @@ h4, h5 {
 }
 
 h1 {
-	font-size: 3.5rem;
+	font-size: 2vmin;
 }
 
 h2 {
 	color: #61b5e5;
-	font-size: 3rem;
+	font-size: 2vmin;
 }
 
 h3 {
