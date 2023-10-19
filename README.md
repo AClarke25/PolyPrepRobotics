@@ -10,4 +10,4 @@ FTC teams are created under Poly robotics.
 
 I believe that's it. Please keep the website up to date and happy coding!! :)
 
-- Annakaecia Clarke '25
+From (the OG website creator): Annakaecia Clarke '25
