@@ -49,7 +49,7 @@ body {
 	background-color: #004b87;
 	position: sticky;
 	top: 0;
-	/* border: #023e61 5px ridge; */
+	border: #00335c 5px solid;
 	height: 10%;
 	z-index: 1;
   overflow: hidden;
@@ -134,7 +134,7 @@ body {
 	right: 0;
 	width: 0;
 	display: none;
-	/* border-left: #023e61 5px ridge; */
+	border-left: #00335c 5px solid;
 	height: 100%;
 	overflow: auto;
 	list-style: none;
@@ -219,12 +219,13 @@ h2 {
 h3 {
 	color: #155c95;
 	margin-top: 5%;
-	font-size: 2.5rem;
+	font-size: 3rem;
 }
 
 h4 {
 	color: #0e2833;
 	font-size: 1.5rem;
+	margin-bottom: 5%;
 }
 
 h5 {
@@ -320,7 +321,7 @@ p {
 	margin-bottom: 5%;
 	text-align: center;
 	color: gray;
-	border: #38a2b5 5px double;
+	border: #155c95 5px solid;
 }
 
 .gallery {
@@ -393,7 +394,7 @@ p {
 
 footer {
 	background: #004b87;
-	/* border: #023e61 5px ridge; */
+	border: #00335c 5px solid;
 	height: auto;
 }
 
