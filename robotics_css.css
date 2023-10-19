@@ -81,7 +81,7 @@ body {
 }
 
 #small-nav .nav-icon {
-	padding: 20px;
+	margin: 20px;
 	font-size: 1.5rem
 }
 
@@ -149,8 +149,8 @@ body {
 	text-decoration: none;
 	display: block;
 	width: fit-content;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	margin-top: 35px;
+	margin-bottom: 35px;
 	border: white;
 	border-width: 0, 2px;
 	font-size: 1.1rem;
