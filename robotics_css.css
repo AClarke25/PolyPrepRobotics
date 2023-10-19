@@ -263,7 +263,7 @@ h6 {
 
 #team {
 	color: whitesmoke;
-	text-shadow: black 1px 0 15px;
+	text-shadow: black 1vmin 0 3vmin;
 	font-size: 7vmin;
 }
 
