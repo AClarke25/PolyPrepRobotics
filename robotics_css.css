@@ -328,6 +328,17 @@ p {
 	opacity: 0.8;
 }
 
+@keyframes fade {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.image_fade {
+	animation-name: fade;
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+}
+
 /*--
 .gallery {
 	line-height: 0;
