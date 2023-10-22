@@ -320,8 +320,12 @@ p {
 	margin: auto;
 	margin-bottom: 5%;
 	border: #155c95 5px solid;
+}
+
+#image_hover {
 	opacity: 1;
 	transition: all ease 200ms;
+	width: fit-content;
 }
 
 #image_hover:hover {
