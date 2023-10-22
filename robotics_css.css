@@ -324,7 +324,7 @@ p {
 	transition: all ease 200ms;
 }
 
-#site_image:hover {
+#image_hover:hover {
 	opacity: 0.8;
 }
 
