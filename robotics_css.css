@@ -325,6 +325,7 @@ p {
 #image_hover {
 	opacity: 1;
 	transition: all ease 200ms;
+	width: fit-content;
 }
 
 #image_hover:hover {
