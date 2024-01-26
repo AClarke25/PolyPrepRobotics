@@ -317,7 +317,6 @@ p {
 
 #site_image {
 	display: block;
-	width: fit-content;
 	margin: auto;
 	margin-bottom: 5%;
 	border: #155c95 5px solid;
