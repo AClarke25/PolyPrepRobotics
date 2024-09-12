@@ -59,7 +59,7 @@
 <h4> Also, check out our past and present <a class="mvp-link" href="robotics_mvps.html">MVPs</a></h4>
 
 
-<div class="flip-card">
+<div class="flip-card" onclick="flipZoom()">
 	<div class="flip-card-inner">
 	  <div class="flip-card-front">
 		<img src="kristin_guynn.jpg" alt=# style="width:300px;height:300px;">
@@ -372,6 +372,12 @@ Reason for joining the team: He thought it sounded really cool so he figured he'
 	function navClose() {
 		document.getElementById("small-nav").style.display = "none";
 		document.getElementById("but1").style.display = "block";
+	}
+
+	function flipZoom() {
+		document.getElementById("small-nav").style.display = "block";
+		document.getElementById("small-nav").style.width = "25%";
+		document.getElementById("but1").style.display = "none";
 	}
 
 	window.onresize = function () {
