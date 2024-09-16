@@ -593,7 +593,7 @@ footer {
 	width: 300px;
 	height: 300px;
 	perspective: 1000px;
-	display: inline;
+	display: i;
   }
   
   .flip-card-inner {
