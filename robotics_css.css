@@ -52,7 +52,7 @@
 	border: #00335c 5px solid;
 	height: 10%;
 	z-index: 1;
-  overflow: hidden;
+  	overflow: hidden;
 }
 
 .nav-contents a {
@@ -172,6 +172,12 @@
 	to {
 		right: 0;
 		opacity:1
+	}
+}
+
+@keyframes flip-zoom {
+	from {
+		
 	}
 }
 
@@ -588,6 +594,10 @@ footer {
 
 /*----------------- Flip Card -----------------*/
 
+.flip-title {
+	color: #155c95;
+}
+
 .flip-card {
 	background-color: transparent;
 	width: 300px;
@@ -616,14 +626,15 @@ footer {
 	height: 100%;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-	border: #155c95 3px solid;
   }
   
   .flip-card-front {
 	background-color: #bbb;
+	border: #155c95 3px solid;
   }
   
   .flip-card-back {
-	background-color: #72a8ff;
+	background-color: #52b8e7a7;
 	transform: rotateY(180deg);
+	border: #155c95 3px solid;
   }
