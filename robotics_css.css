@@ -176,9 +176,13 @@
 }
 
 @keyframes flip-zoom {
-	from {
+	to {
 		
 	}
+}
+
+.zoom:hover {
+	transform: scale(1.5);
 }
 
 @media screen and (max-width: 1070px) {
@@ -594,6 +598,15 @@ footer {
 
 /*----------------- Flip Card -----------------*/
 
+.all-flip {
+	display: flex;
+  	flex-direction: row;
+  	justify-content: center;
+  	align-items: center;
+  	gap: 10px;
+	flex-wrap: wrap;
+}
+
 .flip-title {
 	color: #155c95;
 }
@@ -603,7 +616,6 @@ footer {
 	width: 300px;
 	height: 300px;
 	perspective: 1000px;
-	display: flex;
   }
   
   .flip-card-inner {
@@ -637,4 +649,8 @@ footer {
 	background-color: #52b8e7a7;
 	transform: rotateY(180deg);
 	border: #155c95 3px solid;
+  }
+
+  .flip-zoom-content {
+	display: none;
   }

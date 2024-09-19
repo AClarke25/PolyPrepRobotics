@@ -58,72 +58,76 @@
 
 <h4> Also, check out our past and present <a class="mvp-link" href="robotics_mvps.html">MVPs</a></h4>
 
+<div class="all-flip">
+	<div class="flip-card">
+		<div class="flip-card-inner">
+		<div class="flip-card-front">
+			<img src="kristin_guynn.jpg" alt=# style="width:300px;height:300px;">
+		</div>
+		<div class="flip-card-back">
+			<h5 class="flip-title"> Coach Guynn </h5>
 
-<div class="flip-card" onclick="flipZoom()">
-	<div class="flip-card-inner">
-	  <div class="flip-card-front">
-		<img src="kristin_guynn.jpg" alt=# style="width:300px;height:300px;">
-	  </div>
-	  <div class="flip-card-back">
-		<h5 class="flip-title"> Coach Guynn </h5>
-
-		<p> Role: Head Coach <br>
-		Other interests: Teaching, programming, exercise </p>
-	  </div>
+			<p> Role: Head Coach <br>
+			Other interests: Teaching, programming, exercise </p>
+		</div>
+		</div>
 	</div>
-</div>
 
-<br>
+	<br>
 
-<div class="flip-card">
-	<div class="flip-card-inner">
-	  <div class="flip-card-front">
-		<img src="daniel_costello.jpg" alt=# style="width:300px;height:300px;">
-	  </div>
-	  <div class="flip-card-back">
-		<h5 class="flip-title"> Coach Costello </h5>
+	<div class="flip-card">
+		<div class="flip-card-inner">
+		<div class="flip-card-front">
+			<img src="daniel_costello.jpg" alt=# style="width:300px;height:300px;">
+		</div>
+		<div class="flip-card-back">
+			<h5 class="flip-title"> Coach Costello </h5>
 
-		<p> Role: Assistant Coach <br>
-		Other interests: Anime, computers, video games </p>
-	  </div>
+			<p> Role: Assistant Coach <br>
+			Other interests: Anime, computers, video games </p>
+		</div>
+		</div>
 	</div>
-</div>
 
-<br>
+	<br>
 
-<div class="flip-card">
-	<div class="flip-card-inner">
-	  <div class="flip-card-front">
-		<img src="harry_lucas.jpg" alt=# style="width:300px;height:300px;">
-	  </div>
-	  <div class="flip-card-back">
-		<h5 class="flip-title"> Captain: Harry Lucas </h5>
+	<div class="flip-card" onclick="flipZoom()"">
+		<div class="flip-card-inner">
+		<div class="flip-card-front">
+			<img src="harry_lucas.jpg" alt=# style="width:300px;height:300px;">
+		</div>
+		<div class="flip-card-back">
+			<h5 class="flip-title"> Captain: Harry Lucas </h5>
 
-		<p> Specific team: Blazing Bluebots<br>
-		Role(s): Head of Builder <br>
-		Graduating year: 2025 <br>
-		Other interests: Video games <br>
-		Reason for joining the team: He likes the team environment.</p>
-	  </div>
+			<p> Specific team: Blazing Bluebots<br>
+			Role(s): Head of Building <br>
+
+			<div class="flip-zoom-content">
+				Graduating year: 2025 <br>
+				Other interests: Video games <br>
+				Reason for joining the team: He likes the team environment.</p>
+			</div>
+		</div>
+		</div>
 	</div>
-</div>
 
-<br>
+	<br>
 
-<div class="flip-card">
-	<div class="flip-card-inner">
-	  <div class="flip-card-front">
-		<img src="anna_clarke.jpg" alt=# style="width:300px;height:300px;">
-	  </div>
-	  <div class="flip-card-back">
-		<h5 class="flip-title"> Annakaecia Clarke </h5>
+	<div class="flip-card">
+		<div class="flip-card-inner">
+		<div class="flip-card-front">
+			<img src="anna_clarke.jpg" alt=# style="width:300px;height:300px;">
+		</div>
+		<div class="flip-card-back">
+			<h5 class="flip-title"> Annakaecia Clarke </h5>
 
-		<p> Specific team: Blazing Bluebots<br>
-		Role(s): Programmer and Driver <br>
-		Graduating year: 2025 <br>
-		Other interests: Music, theater, games, roller skating <br>
-		Reason for joining the team: They believe it will be useful for their future career. </p>
-	  </div>
+			<p> Specific team: Blazing Bluebots<br>
+			Role(s): Programmer and Driver <br>
+			Graduating year: 2025 <br>
+			Other interests: Music, theater, games, roller skating <br>
+			Reason for joining the team: They believe it will be useful for their future career. </p>
+		</div>
+		</div>
 	</div>
 </div>
 
@@ -374,12 +378,6 @@ Reason for joining the team: He thought it sounded really cool so he figured he'
 		document.getElementById("but1").style.display = "block";
 	}
 
-	function flipZoom() {
-		document.getElementById("small-nav").style.display = "block";
-		document.getElementById("small-nav").style.width = "25%";
-		document.getElementById("but1").style.display = "none";
-	}
-
 	window.onresize = function () {
 		if(window.innerWidth >= 1070) {
 			document.getElementById("small-nav").style.display = "none";
@@ -393,6 +391,10 @@ Reason for joining the team: He thought it sounded really cool so he figured he'
 		}
 
 		document.getElementByClassName("parallax").style.backgroundSize = "cover";
+	}
+
+	function flipZoom(){
+		document.getElementByClassName("flip-zoom-content").style.display == "block";
 	}
 </script>
 
