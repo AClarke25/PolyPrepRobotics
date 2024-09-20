@@ -91,7 +91,7 @@
 
 	<br>
 
-	<div class="flip-card" onclick="flipZoom()"">
+	<div class="flip-card" id="harry-card" onclick="flipZoom()">
 		<div class="flip-card-inner">
 		<div class="flip-card-front">
 			<img src="harry_lucas.jpg" alt=# style="width:300px;height:300px;">
@@ -378,6 +378,7 @@ Reason for joining the team: He thought it sounded really cool so he figured he'
 		document.getElementById("but1").style.display = "block";
 	}
 
+
 	window.onresize = function () {
 		if(window.innerWidth >= 1070) {
 			document.getElementById("small-nav").style.display = "none";
@@ -393,9 +394,13 @@ Reason for joining the team: He thought it sounded really cool so he figured he'
 		document.getElementByClassName("parallax").style.backgroundSize = "cover";
 	}
 
+	
 	function flipZoom(){
-		document.getElementByClassName("flip-zoom-content").style.display == "block";
+		document.activeElement.style.transform.scale == "1.5";
+		document.activeElement.getElementByClassName("flip-zoom-content").style.display = "flex";
+		document.getElementByClassName("flip-title").innerHTML = "done";
 	}
+
 </script>
 
 </body>
