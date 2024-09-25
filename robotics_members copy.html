@@ -58,6 +58,15 @@
 
 <h4> Also, check out our past and present <a class="mvp-link" href="robotics_mvps.html">MVPs</a></h4>
 
+<div id="myModal" class="modal">
+	<!-- Modal content -->
+	<div class="modal-content">
+	  <span class="close"><i class="fas fa-times"></i></span>
+	  <p>Some text in the Modal..</p>
+	</div>
+  
+</div>
+
 <div class="all-flip">
 	<div class="flip-card">
 		<div class="flip-card-inner">
@@ -93,21 +102,23 @@
 
 	<div class="flip-card" id="harry-card" onclick="flipZoom()">
 		<div class="flip-card-inner">
-		<div class="flip-card-front">
-			<img src="harry_lucas.jpg" alt=# style="width:300px;height:300px;">
-		</div>
-		<div class="flip-card-back">
-			<h5 class="flip-title"> Captain: Harry Lucas </h5>
-
-			<p> Specific team: Blazing Bluebots<br>
-			Role(s): Head of Building <br>
-
-			<div class="flip-zoom-content">
-				Graduating year: 2025 <br>
-				Other interests: Video games <br>
-				Reason for joining the team: He likes the team environment.</p>
+			<div class="flip-card-front">
+				<img src="harry_lucas.jpg" alt=# style="width:300px;height:300px;">
 			</div>
-		</div>
+			<div class="flip-card-back">
+				<div class="modal-content">
+					<h5 class="flip-title"> Captain: Harry Lucas </h5>
+
+					<p> Specific team: Blazing Bluebots<br>
+					Role(s): Head of Building <br>
+
+					<div class="flip-zoom-content">
+						Graduating year: 2025 <br>
+						Other interests: Video games <br>
+						Reason for joining the team: He likes the team environment.</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -399,6 +410,33 @@ Reason for joining the team: He thought it sounded really cool so he figured he'
 		document.activeElement.style.transform.scale == "1.5";
 		document.activeElement.getElementByClassName("flip-zoom-content").style.display = "flex";
 		document.getElementByClassName("flip-title").innerHTML = "done";
+	}
+
+
+	// Get the modal
+	var modal = document.getElementById("myModal");
+
+	// Get the button that opens the modal
+	var btn = document.getElementByClassName("flip-card");
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks the button, open the modal 
+	btn.onclick = function() {
+		modal.style.display = "block";
+	}
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+		modal.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
 	}
 
 </script>
