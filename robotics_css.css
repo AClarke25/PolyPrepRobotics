@@ -175,16 +175,6 @@
 	}
 }
 
-@keyframes flip-zoom {
-	to {
-		
-	}
-}
-
-.zoom:hover {
-	transform: scale(1.5);
-}
-
 @media screen and (max-width: 1070px) {
   .nav a {
   	display: none;
@@ -272,10 +262,24 @@ h6 {
 	animation-iteration-count: 1;
 }
 
-#team {
+.team {
 	color: whitesmoke;
 	text-shadow: black 1vmin 0 3vmin;
 	font-size: 7vmin;
+}
+
+.team-links {
+	text-decoration: none;
+	color: #d4f0ff;
+}
+
+.team-links:visited {
+	color: #d4f0ff;
+}
+
+.team-links:hover {
+	color: #99e2ff;
+	transition: all ease-in-out 200ms;
 }
 
 /*------------------ Txt/Lst ------------------*/
@@ -325,7 +329,7 @@ p {
 
 /*------------------- Image -------------------*/
 
-#site_image {
+.site_image {
 	display: block;
 	margin: auto;
 	margin-bottom: 5%;
@@ -560,12 +564,14 @@ footer {
 
 /*----------------- Extension Page -----------------*/
 
-.doc-page h1 {
+/*
+h1 {
 	padding: 15px;
 	width: 100%;
 	color: #003a78;
 	border-bottom: #004b87 solid 4px;
 }
+*/
 
 #homepage-link, .doc-link, .doc-p, .mvp-link {
 	color: #548fe3;
@@ -590,7 +596,7 @@ footer {
 	transition: all ease-in-out 200ms;
 }
 
-.doc-page li {
+li {
 	list-style: none;
 	padding: 5px;
 	width: 100%;
@@ -603,7 +609,7 @@ footer {
   	flex-direction: row;
   	justify-content: center;
   	align-items: center;
-  	gap: 10px;
+  	gap: 24px;
 	flex-wrap: wrap;
 }
 
@@ -653,44 +659,4 @@ footer {
 
   .flip-zoom-content {
 	display: none;
-  }
-
-
-  /* The Modal (background) */
-.modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
-	padding-top: 100px; /* Location of the box */
-	left: 0;
-	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0,0,0); /* Fallback color */
-	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content {
-	background-color: #fefefe;
-	margin: auto;
-	padding: 20px;
-	border: 1px solid #888;
-	width: 80%;
-  }
-  
-  /* The Close Button */
-  .close {
-	color: #aaaaaa;
-	float: right;
-	font-size: 28px;
-	font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-	color: #000;
-	text-decoration: none;
-	cursor: pointer;
   }
