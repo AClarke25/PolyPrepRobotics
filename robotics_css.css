@@ -652,11 +652,14 @@ li {
   }
   
   .flip-card-back {
-	background-color: #52b8e7a7;
-	transform: rotateY(180deg);
-	border: #155c95 3px solid;
-  }
-
-  .flip-zoom-content {
-	display: none;
-  }
+    background-color: #52b8e7a7;
+    transform: rotateY(180deg);
+    border: #155c95 3px solid;
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    display: flex; 
+	flex-direction: column;             /* Use flexbox */
+    justify-content: center;    /* Center horizontally */
+    align-items: center;        /* Center vertically */             /* Set a height for the box */
+}
