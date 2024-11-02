@@ -329,13 +329,6 @@ p {
 
 /*------------------- Image -------------------*/
 
-.site_image {
-	display: block;
-	margin: auto;
-	margin-bottom: 5%;
-	border: #155c95 5px solid;
-}
-
 #image_hover {
 	opacity: 1;
 	transition: all ease 200ms;
@@ -355,6 +348,13 @@ p {
 	animation-name: fade;
 	animation-duration: 2.5s;
 	animation-iteration-count: 1;
+}
+
+.site_image {
+	display: block;
+	margin: auto;
+	margin-bottom: 5%;
+	border: #155c95 5px solid;
 }
 
 /*--
