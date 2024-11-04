@@ -49,7 +49,7 @@
 	position: absolute;
 	transform: translateY(-50vh);
   }
-  
+
 .nav {
 	background-color: #004b87;
 	position: sticky;
@@ -661,7 +661,7 @@ li {
     transform: rotateY(180deg);
     border: #155c95 3px solid;
     margin: auto;
-    width: fit-content;
+    width: 100%;
     text-align: center;
     display: flex; 
 	flex-direction: column;             /* Use flexbox */
