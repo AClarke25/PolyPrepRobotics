@@ -45,11 +45,6 @@
 
 /*------------------ Nav Bar ------------------*/
 
-.anchor {
-	position: absolute;
-	transform: translateY(-50vh);
-  }
-
 .nav {
 	background-color: #004b87;
 	position: sticky;
@@ -667,4 +662,9 @@ li {
 	flex-direction: column;             /* Use flexbox */
     justify-content: center;    /* Center horizontally */
     align-items: center;        /* Center vertically */             /* Set a height for the box */
+}
+
+.anchor {
+	position: absolute;
+	transform: translateY(-40vh);
 }
