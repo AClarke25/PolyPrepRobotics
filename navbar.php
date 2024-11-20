@@ -1,0 +1,35 @@
+<?php
+echo '<div class="nav">';
+echo '<a id="logo-link" href="index.html">';
+echo '<img class="logo-pic" src="Pictures/poly_robotics_logo.png" alt="The Poly Prep Robotics team logo">';
+echo '</a>';
+echo '<div class="nav-contents" id="nav-response">';
+echo '<a href="index.html">Home</a>';
+echo '<a href="robotics_members.html">Members</a>';
+echo '<a href="robotics_portfolios.html">Portfolios</a>';
+echo '<a href="robotics_notebooks.html">Notebooks</a>';
+echo '<a href="robotics_highlights.html">Highlights</a>';
+echo '<a href="robotics_more.html">More</a>';
+echo '<a href="https://www.instagram.com/polypreprobotics/" target="_blank" rel="noopener noreferrer">';
+echo '<i class="fab fa-instagram"></i>';
+echo '</a>';
+echo '<button class="nav-icon" id="but1" onclick="navOpen()">';
+echo '<i class="fas fa-bars"></i>';
+echo '</button>';
+echo '</div>';
+echo '</div>';
+echo '<div class="navbar-animate" id="small-nav">';
+echo '<button class="nav-icon" onclick="navClose()">';
+echo '<i class="fas fa-times"></i>';
+echo '</button>';
+echo '<li><a href="index.html">Home</a></li>';
+echo '<li><a href="robotics_members.html">Members</a></li>';
+echo '<li><a href="robotics_portfolios.html">Portfolios</a></li>';
+echo '<li><a href="robotics_notebooks.html">Notebooks</a></li>';
+echo '<li><a href="robotics_highlights.html">Highlights</a></li>';
+echo '<li><a href="robotics_more.html">More</a></li>';
+echo '<li><a href="https://www.instagram.com/polypreprobotics/" target="_blank" rel="noopener noreferrer">';
+echo '<i class="fab fa-instagram"></i>';
+echo '</a></li>';
+echo '</div>';
+?>
